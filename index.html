@@ -16,7 +16,7 @@
 		
 	</script>
 	
-
+<!--
 <link rel='stylesheet' id='opensans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C800%2C300&#038;ver=3.9.19' type='text/css' media='all' />
 <link rel='stylesheet' id='opensanscondensed-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A700&#038;ver=3.9.19' type='text/css' media='all' />
 <link rel='stylesheet' id='reset-css'  href='http://arnaudvannier.com/wordpress/wp-content/themes/responsy-v3.3/css/reset.css?ver=3.9.19' type='text/css' media='all' />
@@ -35,8 +35,201 @@
 <script type='text/javascript' src='http://arnaudvannier.com/wordpress/wp-content/themes/responsy-v3.3/js/main.js?ver=3.9.19'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://arnaudvannier.com/wordpress/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://arnaudvannier.com/wordpress/wp-includes/wlwmanifest.xml" /> 
+-->
+	<style type="text/css">
+/* CSS3 Create
 
-	
+Styles CSS liés à la démo:
+-> Effet coverflow en full CSS
+
+*/
+#article82{
+height:400px;
+background: #9162D8;
+/*linear-gradient*/
+background:-webkit-linear-gradient(#9162D8,#382A99);
+background:   -moz-linear-gradient(#9162D8,#382A99);
+background:     -o-linear-gradient(#9162D8,#382A99);
+background:        linear-gradient(#9162D8,#382A99);
+font:.8em sans-serif;
+color:deepskyblue;
+text-shadow:0 -1px 0 rgba(0,0,0,.7);
+
+}
+#article82 input,
+#article82 label{position:absolute;bottom:5px;left:1em;color:rgba(255,255,255,.8);}
+#article82 label{left:2.2em;}
+
+
+#article82 ul{
+margin:100px auto;
+width:500px;
+height:160px;
+/*perspective*/
+-webkit-perspective:500px;
+   -moz-perspective:500px;
+    -ms-perspective:500px;
+     -o-perspective:500px;
+        perspective:500px;
+}
+#article82 ul li{
+display:inline-block;
+margin-right:-15px;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+position:relative;
+z-index:50;
+background-color:#111;
+background-image:-webkit-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+background-image:-moz-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+background-image:-o-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+background-image:linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+width:112px;
+height:165px;
+padding:10px;
+list-style:none;
+text-align:center;
+/*transform*/
+-webkit-transform:rotateY(45deg);
+   -moz-transform:rotateY(45deg);
+    -ms-transform:rotateY(45deg);
+     -o-transform:rotateY(45deg);
+        transform:rotateY(45deg);
+/*transition*/
+-webkit-transition:all .45s;
+   -moz-transition:all .45s;
+     -o-transition:all .45s;
+        transition:all .45s;
+border-radius:2px;
+}
+
+#article82 ul li a.prix{
+position:absolute;
+bottom:5px;
+right:5px;
+color:white;
+text-decoration:none;
+text-align:center;
+font-size:1.1em;
+padding:.5em;
+border-radius:2px;
+background-color:#222;
+background-image:-webkit-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+background-image:-moz-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+background-image:-o-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+background-image:linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
+/*transition*/
+-webkit-transition:background-color 1s;
+   -moz-transition:background-color 1s;
+     -o-transition:background-color 1s;
+        transition:background-color 1s;
+}
+#article82 ul li img{
+width:100% !important;
+height:auto !important;
+}
+/* l'element central */
+#article82 ul li:nth-child(3){
+/*transform*/
+-webkit-transform:rotateY(0) scale(1.22);
+   -moz-transform:rotateY(0) scale(1.22);
+    -ms-transform:rotateY(0) scale(1.22);
+     -o-transform:rotateY(0) scale(1.22);
+        transform:rotateY(0) scale(1.22);
+background-color:#222;
+z-index:55;
+}
+#article82 ul li:nth-child(3) a.prix{
+background-color:#09C;
+}
+/* les elements qui suivent l'element central */
+#article82 ul li:nth-child(3) ~ li{
+/*transform*/
+-webkit-transform:rotateY(-45deg);
+   -moz-transform:rotateY(-45deg);
+    -ms-transform:rotateY(-45deg);
+     -o-transform:rotateY(-45deg);
+        transform:rotateY(-45deg);
+}
+#article82 ul li:last-child,
+#article82 ul li:first-child{
+    z-index:45;
+}
+
+
+#article82 ul:hover li:not(:hover){
+/*transform*/
+-webkit-transform:rotateY(45deg);
+   -moz-transform:rotateY(45deg);
+    -ms-transform:rotateY(45deg);
+     -o-transform:rotateY(45deg);
+        transform:rotateY(45deg);
+background-color:#111;
+}
+#article82 ul:hover li a.prix{
+background-color:#222;
+}
+/* tous les elements survoles 
+   ET meme ceux qui suivent l'élement central
+   (surclasser)
+*/
+#article82 ul li:hover,
+#article82 ul li:first-child:hover,
+#article82 ul li:nth-child(3) ~ li:hover{
+/*transform*/
+-webkit-transform:rotateY(0) scale(1.22);
+   -moz-transform:rotateY(0) scale(1.22);
+    -ms-transform:rotateY(0) scale(1.22);
+     -o-transform:rotateY(0) scale(1.22);
+        transform:rotateY(0) scale(1.22);
+z-index:60;
+background-color:#222;
+}
+#article82 ul:hover li:hover a.prix{
+background-color:#09C;
+}
+#article82 ul:hover li:hover ~ li{
+/*transform*/
+-webkit-transform:rotateY(-45deg);
+   -moz-transform:rotateY(-45deg);
+    -ms-transform:rotateY(-45deg);
+     -o-transform:rotateY(-45deg);
+        transform:rotateY(-45deg);
+}
+
+
+/*OMBRES*/
+#article82 input:checked ~ ul li{
+/*box-shadow*/
+-webkit-box-shadow:0 1px 0 rgba(255,255,255,.4) inset,-5px 0px 5px -5px rgba(0,0,0,.8);
+        box-shadow:0 1px 0 rgba(255,255,255,.4) inset,-5px 0px 5px -5px rgba(0,0,0,.8);
+}
+#article82 input:checked ~ ul li:nth-child(3){
+/*box-shadow*/
+-webkit-box-shadow:0 1px 0 rgba(255,255,255,.4) inset, 0 2px 10px rgba(0,0,0,.8),0 15px 20px -10px rgba(0,0,0,.3);
+        box-shadow:0 1px 0 rgba(255,255,255,.4) inset, 0 2px 10px rgba(0,0,0,.8),0 15px 20px -10px rgba(0,0,0,.3);
+}
+#article82 input:checked ~ ul li:nth-child(3) ~ li{
+/*box-shadow*/
+-webkit-box-shadow:0 1px 0 rgba(255,255,255,.4) inset,5px 0px 5px -5px rgba(0,0,0,.8);
+        box-shadow:0 1px 0 rgba(255,255,255,.4) inset,5px 0px 5px -5px rgba(0,0,0,.8);
+}
+#article82 input:checked ~ ul:hover li{
+/*box-shadow*/
+-webkit-box-shadow:0 1px 0 rgba(255,255,255,.4) inset,-5px 0px 5px -5px rgba(0,0,0,.8);
+        box-shadow:0 1px 0 rgba(255,255,255,.4) inset,-5px 0px 5px -5px rgba(0,0,0,.8);
+}
+#article82 input:checked ~ ul:hover li:hover{
+/*box-shadow*/
+-webkit-box-shadow:0 1px 0 rgba(255,255,255,.4) inset, 0 2px 10px rgba(0,0,0,.8),0 15px 20px -10px rgba(0,0,0,.3);
+        box-shadow:0 1px 0 rgba(255,255,255,.4) inset, 0 2px 10px rgba(0,0,0,.8),0 15px 20px -10px rgba(0,0,0,.3);
+}
+#article82 input:checked ~ ul:hover li:hover ~ li{
+/*box-shadow*/
+-webkit-box-shadow:0 1px 0 rgba(255,255,255,.4) inset,5px 0px 5px -5px rgba(0,0,0,.8);
+        box-shadow:0 1px 0 rgba(255,255,255,.4) inset,5px 0px 5px -5px rgba(0,0,0,.8);
+}
+</style>
   </head>
   
   <body>
@@ -57,6 +250,68 @@
       
                       </section>
                       
+                        <section id="article82" class="crayon article-css-82 demoTime">
+          
+                      <ul>
+<li>
+	<a href="#g1" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /><img src="images/papa.gif" alt="Tee shir" width='100' height='400' style='height:100px;width:400px;' /></a>
+	IRONSHOOTFX
+	<a href="" class="prix">See details</a>
+</li><!--
+--><li>
+	<a href="#g2"><img src="images/marlena.gif" alt="Tee shirt HTML5" width='100' height='400' style='height:100px;width:400px;' /></a>
+	LEGEND MARLENA
+	<a href="#g2" class="prix">details</a>
+
+</li><!--
+--><li>
+	<a href="#g3"><img src="images/cap2.jpg" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Maker Software I
+	<a href="#g3" class="prix">details</a>
+</li><!--
+--><li>
+	<a href="#g4"><img src="images/math.gif" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Veronica geometry
+	<a href="#g4" class="prix">details</a>
+</li><!--
+--><li>
+	<a href="#g5"><img src="images/parser.gif" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Parser Drawing
+	<a href="#g5" class="prix">details</a>
+</li>
+
+
+</ul>
+<ul>
+<li>
+	<a href="#g6"><img src="images/pok2.png" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Pokemon classic Game
+	<a href="#g6" class="prix">details</a>
+</li>
+<li>
+	<a href="#g7"><img src="images/zel.gif" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Maze generator 
+	<a href="#g7" class="prix">details</a>
+</li>
+<li>
+	<a href="#g77"><img src="images/futur.jpg" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Simple renderer with open streetmap
+	<a href="#g77" class="prix">details</a>
+</li>
+<li>
+	<a href="#g8"><img src="images/shell.gif" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	Shell software 
+	<a href="#g8" class="prix">details</a>
+</li>
+<li>
+	<a href="#g9"><img src="images/cap3.jpg" alt="Tee shirt HTML5" width='100' height='100' style='height:100px;width:100px;' /></a>
+	capsul monster
+	<a href="#g9" class="prix">details</a>
+</li>
+</ul>
+</div>
+
+                      
     <div class="container">     
         <!-- ************************** MIDDLE -->
        
@@ -66,26 +321,6 @@
                 <ul id="filters">
 				
 												
-								<li class="current">
-								
-									<a href="#" data-filter="*">Tous</a>
-									
-								</li>
-								
-												
-												
-								<li>
-								
-									<a href="#" data-filter=".graphisme">Logiciels</a>
-									
-								</li>
-								
-														
-								<li>
-								
-									<a href="#" data-filter=".jeux-video">Jeux vidéo</a>
-									
-								</li>
 								
 												
                 </ul>
@@ -95,14 +330,20 @@
                 <div id="portfolio" class="portfolio-items">
 				
 												
-							<div class="item jeux-video">
+							<div class="item jeux-video1" id="g1"> 
 							
 								<div class="media-box">
 								
-									<img width="767" height="460" src="images/papa.gif" class="attachment-portfolio_page_img wp-post-image" />									
+									            <div>
+    <object type="application/x-shockwave-flash" width="600" height="500" data="http://www.youtube.com/v/AO-koVx6EJs">
+      <param name="movie" value="http://www.youtube.com/v/gb7A2nLaG1Q" />
+      <param name="wmode" value="transparent" />
+      Vous n'avez pas de navigateur moderne, ni Flash installé...
+    </object>
+</div>						
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+									
 										
 																				
 										<a class="ico full" target="_blank" href=""  ></a>
@@ -114,18 +355,27 @@
 								<h3 class="project-title">IronShootFX</h3>
 								
 								<p class="category">jeu vidéo</p>
+								<h3>description : </h3><p>Jeu 3D réalisé dans le cadre d'un cours
+								sur les interfaces graphiques.Il s'agit d'un shoot em all ou le but est de detruire tous le monde.</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/IronShootFX">github(source)</p>
 								
 							</div>
 							
 														
-							<div class="item jeux-video">
+							<div class="item jeux-video" id="g2">
 							
 								<div class="media-box">
 								
-									<img width="767" height="460" src="images/rpg.png"  />									
+																            <div>
+    <object type="application/x-shockwave-flash" width="600" height="500" data="http://www.youtube.com/v/9HUbK7pUn5s">
+      <param name="movie" value="http://www.youtube.com/v/gb7A2nLaG1Q" />
+      <param name="wmode" value="transparent" />
+      Vous n'avez pas de navigateur moderne, ni Flash installé...
+    </object>
+</div>
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										
 										
 																				
 										<a class="ico full" target="_blank" href=""  ></a>
@@ -137,21 +387,23 @@
 								<h3 class="project-title">Legend of Marlena</h3>
 								
 								<p class="category">jeu vidéo</p>
-								
+								<h3>description : </h3><p>Jeu de RPG 2 D classique realisé dans le but de faire un jeu typique de dongeon et dragon.</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/cloudStrif/GoldenSunD">github(source)</p>
+								<p><a href="https://www.palaiszelda.com/jeux_amateurs_2.php#linkBrother">Palais Zelda</p>
+							</br><p><a href="https://www.youtube.com/watch?v=9HUbK7pUn5s">Youtube </p>	
 							</div>
 							
 							
 						
 							
 														
-							<div class="item graphisme jeux-video">
+							<div class="item graphisme jeux-video" id="g3">
 							
 								<div class="media-box">
 								
 									<img width="767" height="460" src="images/cap2.jpg" />									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
 										
 																				
 										<a class="ico full" target="_blank" href=""  ></a>
@@ -163,18 +415,28 @@
 								<h3 class="project-title">Maker I</h3>
 								
 								<p class="category">logiciel</p>
+								<h3>description : </h3><p>Programmation d'un logiciel de making de jeu video 2D methodes agiles de devellopements.</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/MakerMarkI-1.0">github(source)</p>
 								
 							</div>
 							
 														
-							<div class="item graphisme jeux-video">
+							<div class="item graphisme jeux-video" id="g4"> 
 							
 								<div class="media-box">
 								
-									<img width="767" height="460" src="images/math.gif" class="attachment-portfolio_page_img wp-post-image" alt="Thresholds" title="" />									
+				<div class="media-box">
+								
+																            <div>
+    <object type="application/x-shockwave-flash" width="600" height="500" data="http://www.youtube.com/v/C-TRriC9qQY">
+      <param name="movie" value="http://www.youtube.com/v/gb7A2nLaG1Q" />
+      <param name="wmode" value="transparent" />
+      Vous n'avez pas de navigateur moderne, ni Flash installé...
+    </object>
+</div>									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										
 										
 																				
 										<a class="ico full"  href=""  ></a>
@@ -186,18 +448,20 @@
 								<h3 class="project-title">Veronica-geometry</h3>
 								
 								<p class="category">logiciel</p>
+								<h3>description : </h3><p>Programmation d'un logiciel de Mathematique, sur la geometrie.Develloement logiciel dans le cadre des etudes.</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/Veronica-Geometry">github(source)</p>
 								
 							</div>
 							
 														
-							<div class="item graphisme jeux-video">
+							<div class="item graphisme jeux-video" id="g5">
 							
 								<div class="media-box">
 								
 									<img width="767" height="460" src="images/parser.gif" class="attachment-portfolio_page_img wp-post-image" alt="1000 Galantes" title="" />									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										>
 										
 																				
 										<a class="ico full"  href=""  ></a>
@@ -209,18 +473,28 @@
 								<h3 class="project-title">Logiciel de dessin custum</h3>
 								
 								<p class="category">logiciel</p>
+								<h3>description : </h3><p>Logiciel utilisant FLEX pour le parsing de données.fait dans le cadre des etudes.</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/ZeldaParser">github(source)</p>
 								
 							</div>
 							
 														
-							<div class="item jeux-video">
+							<div class="item jeux-video" id="g6">
 							
 								<div class="media-box">
 								
-									<img width="767" height="460" src="images/pok2.png" class="attachment-portfolio_page_img wp-post-image" alt="Insight" title="" />									
+									<div class="media-box">
+								
+																            <div>
+    <object type="application/x-shockwave-flash" width="600" height="500" data="http://www.youtube.com/v/jSDqw0KIZlw">
+      <param name="movie" value="http://www.youtube.com/v/gb7A2nLaG1Q" />
+      <param name="wmode" value="transparent" />
+      Vous n'avez pas de navigateur moderne, ni Flash installé...
+    </object>
+</div>								
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										
 										
 																				
 										<a class="ico full" target="_blank" href=""  ></a>
@@ -232,18 +506,19 @@
 								<h3 class="project-title">Pokemon minin challenge</h3>
 								
 								<p class="category">jeu vidéo</p>
-								
+								<h3>description : </h3><p>Reproduction rapide d'un jeu pokemon avec graphisme travaillé</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/cloudStrif/pokemon">github(source)</p>
 							</div>
 							
 														
-							<div class="item jeux-video">
+							<div class="item jeux-video" id="g7">
 							
 								<div class="media-box">
 								
 									<img width="767" height="460" src="images/zel.gif" class="attachment-portfolio_page_img wp-post-image" alt="Ascension" title="" />									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										
 										
 																				
 										<a class="ico full" target="_blank" href=""  ></a>
@@ -255,18 +530,19 @@
 								<h3 class="project-title">Maze generator</h3>
 								
 								<p class="category">jeu vidéo</p>
+								<h3>description : </h3><p>Mini jeu qui genere un labyrinthe aleatoire.DM d'algorithmique</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/Maze-Generator">github(source)</p>
 								
 							</div>
 							
 														
-							<div class="item graphisme">
+							<div class="item graphisme" id="g77">
 							
 								<div class="media-box">
 								
 									<img width="767" height="460" src="images/futur.jpg" class="attachment-portfolio_page_img wp-post-image" alt="Super Tiny Leap" title="" />									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
 										
 																				
 										<a class="ico full"  href=""  ></a>
@@ -278,6 +554,8 @@
 								<h3 class="project-title">Super Tiny Leap</h3>
 								
 								<p class="category"></p>
+								<h3>description : </h3><p>Projet de parsing de données pour ensuite afficher dans une map la carte (avec plusieurs options)</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/Just-A-Small-OpenStreetMap-Renderer">github(source)</p>
 								
 							</div>
 							
@@ -285,14 +563,14 @@
 							
 							
 														
-							<div class="item graphisme">
+							<div class="item graphisme" id="g8">
 							
 								<div class="media-box">
 								
 									<img width="767" height="460" src="images/shell.gif" class="attachment-portfolio_page_img wp-post-image" alt="Borne d&#8217;arcade D.I.Y" title="" />									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+									>
 										
 																				
 										<a class="ico full"  href=""  ></a>
@@ -305,17 +583,27 @@
 								
 								<p class="category"></p>
 								
+								<h3>description : </h3><p>Projet de reproduction d'un shell version starwars</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/StarkYShell">github(source)</p>
 							</div>
 							
 														
-							<div class="item jeux-video">
+							<div class="item jeux-video" id="g9">
 							
 								<div class="media-box">
 								
-									<img width="767" height="460" src="images/cap3.jpg" class="attachment-portfolio_page_img wp-post-image" alt="The Wreck" title="" />									
+										<div class="media-box">
+								
+																            <div>
+    <object type="application/x-shockwave-flash" width="600" height="500" data="http://www.youtube.com/v/Yu0fvbIgYWw">
+      <param name="movie" value="http://www.youtube.com/v/gb7A2nLaG1Q" />
+      <param name="wmode" value="transparent" />
+      Vous n'avez pas de navigateur moderne, ni Flash installé...
+    </object>
+</div>								
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										
 										
 																				
 										<a class="ico full"  href=""  ></a>
@@ -327,18 +615,20 @@
 								<h3 class="project-title">Monster Capsule</h3>
 								
 								<p class="category">jeu vidéo</p>
+									<h3>description : </h3><p>Projet externe , de jeu video sur les monster capsule.(en cours de dev)</p>
+								<h3>Liens : </h3> <p><a href="https://github.com/kiraD/MonsterCap">github(source)</p>
 								
 							</div>
 							
 														
-							<div class="item jeux-video">
+							<div class="item jeux-video" id="g10">
 							
 								<div class="media-box">
 								
 									<img width="767" height="460" src="images/terrain.png" class="attachment-portfolio_page_img wp-post-image" alt="Laser Dancing Levrier" title="" />									
 									<div class="mask">
 									
-										<h3 class="title">SEE PROJECT DETAILS</h3>
+										
 										
 																				
 										<a class="ico full" target="_blank" href=""  ></a>
